@@ -10,6 +10,8 @@ require 'java-properties'
 class Chef
   class Resource
     class JavaProperties < Chef::Resource
+      resource_name :java_properties
+      provides :java_properties
 
       def initialize(name, run_context=nil)
         super
